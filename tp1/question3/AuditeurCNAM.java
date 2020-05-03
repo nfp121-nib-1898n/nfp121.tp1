@@ -45,7 +45,13 @@ public class AuditeurCNAM {
      *         homonymes...
      */
     public String login() {
-        return "";// à compléter
+        String lnom,lprenom,login;
+        lnom=nom.substring(0,6);
+        lprenom=prenom.substring(0,1);
+        login=lnom+"_"+lprenom;
+        login.toLowerCase();
+        login.replaceAll("[-?]", "_");
+        return login;// à compléter
     }
 
     /**
@@ -54,7 +60,7 @@ public class AuditeurCNAM {
      * @return son nom
      */
     public String nom() {
-        return null;// à compléter
+        return nom;// à compléter
     }
 
     /**
@@ -63,7 +69,7 @@ public class AuditeurCNAM {
      * @return son prénom
      */
     public String prenom() {
-        return null;// à compléter
+        return prenom;// à compléter
     }
 
     /**
@@ -72,7 +78,7 @@ public class AuditeurCNAM {
      * @return son matricule
      */
     public String matricule() {
-        return null;// à compléter
+        return matricule;// à compléter
     }
 
     /**

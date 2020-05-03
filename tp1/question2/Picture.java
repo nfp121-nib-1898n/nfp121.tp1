@@ -82,5 +82,9 @@ public class Picture {
             sun.changeColor("yellow");
         }
     }
+    public void slowMoveVertical(boolean terrefix,int distance){
+    if (terrefix==true){
+        sun.slowMoveVertical(distance);
+    }}
 
 }
